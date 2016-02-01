@@ -13,8 +13,9 @@ export default Template = {};
  */
 export function each(list, iteratee, context) {
   let keys = Object.keys(list);
+  let max = keys.length - 1;
   let arr = keys.map((key, index) => {
-    return iteratee.call(context, list[key], key, index);
+    return iteratee.call(context, list[key], key, index, max);
   });
   arr.__proto__ = {
     else(elseblock) {
