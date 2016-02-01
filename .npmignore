@@ -1,3 +1,7 @@
-webpack.config.js
-index.js.map
+src
+node_modules
+scripts
+.babelrc
+.gitignore
+.git
 CONTRIBUTING.md
